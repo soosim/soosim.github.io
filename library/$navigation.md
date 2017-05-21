@@ -11,6 +11,8 @@
 - [小技巧](?file=002-PHP/0000-小技巧 "小技巧")
 - [PHP高精度计算函数](?file=002-PHP/0001-PHP高精度计算函数 "PHP高精度计算函数")
 - [PHP内置Server服务器](?file=002-PHP/0002-PHP内置Server服务器 "PHP内置Server服务器")
+- [PHP闭包的使用](?file=002-PHP/0003-PHP闭包的使用 "PHP闭包的使用")
 
 ##### 运维
-- [firewall](?file=005-运维/0001-firewall "firewall")
+- **Linux 基础**
+    - [firewall](?file=005-运维/0001-Linux 基础/0001-firewall "firewall")
