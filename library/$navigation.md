@@ -8,7 +8,9 @@
 - [我们做什么](?file=001-技术中心/1901-我们做什么 "我们做什么")
 
 ##### PHP
+- [小技巧](?file=002-PHP/0000-小技巧 "小技巧")
 - [PHP高精度计算函数](?file=002-PHP/0001-PHP高精度计算函数 "PHP高精度计算函数")
+- [PHP内置Server服务器](?file=002-PHP/0002-PHP内置Server服务器 "PHP内置Server服务器")
 
 ##### 运维
 - [firewall](?file=005-运维/0001-firewall "firewall")
