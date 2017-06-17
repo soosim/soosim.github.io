@@ -22,10 +22,15 @@
     - [linux去重复行](?file=005-运维/0001-Linux 基础/0003-linux去重复行 "linux去重复行")
 - **Linux 日常维护**
     - [大文件清理](?file=005-运维/0002-Linux 日常维护/0000-大文件清理 "大文件清理")
+- **其他**
+    - [Samba服务搭建](?file=005-运维/0017-其他/0005-Samba服务搭建 "Samba服务搭建")
 
 ##### 工具篇
-- **git**
-    - [git基础](?file=006-工具篇/0001-git/001-git基础 "git基础")
+- **Git**
+    - [git基础](?file=006-工具篇/0001-Git/001-git基础 "git基础")
+- **Fiddler**
+    - [Fiddler命令行的使用](?file=006-工具篇/0002-Fiddler/0000-Fiddler命令行的使用 "Fiddler命令行的使用")
+    - [Fiddler手机抓包](?file=006-工具篇/0002-Fiddler/0001-Fiddler手机抓包 "Fiddler手机抓包")
 
 ##### 其他
 - **DOS小知识**
