@@ -31,6 +31,7 @@
 - **Fiddler**
     - [Fiddler命令行的使用](?file=006-工具篇/0002-Fiddler/0000-Fiddler命令行的使用 "Fiddler命令行的使用")
     - [Fiddler手机抓包](?file=006-工具篇/0002-Fiddler/0001-Fiddler手机抓包 "Fiddler手机抓包")
+    - [Fiddler调试远程服务器上的文件](?file=006-工具篇/0002-Fiddler/0002-Fiddler调试远程服务器上的文件 "Fiddler调试远程服务器上的文件")
 
 ##### 其他
 - **DOS小知识**
