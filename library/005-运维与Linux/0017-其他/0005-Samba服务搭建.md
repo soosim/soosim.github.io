@@ -15,8 +15,13 @@
 直接在 ```/etc/samba/smb.conf```中加入以下配置：
 
 ```ini
+# 在 [global]目录下配置
+	security = user
+	map to guest = Bad User
+	
+# 在文件末尾追加
 [sophia]
-	comment = sophia smd
+	comment = sophia smb
 	path = /home/sophia
 	writable = yes
 	available = yes
@@ -30,10 +35,10 @@
 
 
 
-然后，曾加 ```sophia```用户到smb用户列表中
+然后，增加 ```sophia```用户到smb用户列表中
 
 ```shell
-smbpasswd -a sophia
+sudo smbpasswd -a sophia
 ```
 
 
@@ -53,6 +58,9 @@ smbpasswd -a sophia
 	path=/home/myth/share
 	public=yes
 	writable=yes
+	create mode = 0777
+	directory mode = 0777
+	guest ok =yes
 ```
 
 在Windows 下访问共享目录，可点击运行，输入 \192.168.0.10\share 
