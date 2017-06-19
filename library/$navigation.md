@@ -13,6 +13,7 @@
 - [PHPunit](?file=002-PHP/0005-PHPunit "PHPunit")
 - [PHP输入流](?file=002-PHP/0006-PHP输入流 "PHP输入流")
 - [PHP标准库(SPL)](?file=002-PHP/0007-PHP标准库(SPL) "PHP标准库(SPL)")
+- [PHP生成器yield](?file=002-PHP/0008-PHP生成器yield "PHP生成器yield")
 
 ##### DB
 - [事务隔离级别](?file=004-DB/0000-事务隔离级别 "事务隔离级别")
