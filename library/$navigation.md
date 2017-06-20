@@ -29,12 +29,16 @@
     - [firewall](?file=005-运维与Linux/0001-Linux 基础/0001-firewall "firewall")
     - [sort命令](?file=005-运维与Linux/0001-Linux 基础/0002-sort命令 "sort命令")
     - [linux去重复行](?file=005-运维与Linux/0001-Linux 基础/0003-linux去重复行 "linux去重复行")
+    - [scp命令](?file=005-运维与Linux/0001-Linux 基础/0004-scp命令 "scp命令")
+    - [firewall基础](?file=005-运维与Linux/0001-Linux 基础/0006-firewall基础 "firewall基础")
 - **Linux 日常维护**
     - [大文件清理](?file=005-运维与Linux/0002-Linux 日常维护/0000-大文件清理 "大文件清理")
+    - [网络状况和优化基础](?file=005-运维与Linux/0002-Linux 日常维护/0003-网络状况和优化基础 "网络状况和优化基础")
 - **Ubuntu专栏**
-    - [ubuntu常用快捷键](?file=005-运维与Linux/0003-Ubuntu专栏/0000-ubuntu常用快捷键 "ubuntu常用快捷键")
+    - [ubuntu常用快捷键](?file=005-运维与Linux/0004-Ubuntu专栏/0000-ubuntu常用快捷键 "ubuntu常用快捷键")
 - **其他**
     - [Samba服务搭建](?file=005-运维与Linux/0017-其他/0005-Samba服务搭建 "Samba服务搭建")
+- [LInux 实用工具](?file=005-运维与Linux/9999-LInux 实用工具 "LInux 实用工具")
 
 ##### 开发工具篇
 - **Git**
