@@ -32,6 +32,7 @@
     - [scp命令](?file=005-运维与Linux/0001-Linux 基础/0004-scp命令 "scp命令")
     - [firewall基础](?file=005-运维与Linux/0001-Linux 基础/0006-firewall基础 "firewall基础")
     - [重定向](?file=005-运维与Linux/0001-Linux 基础/0007-重定向 "重定向")
+    - [sed与awk](?file=005-运维与Linux/0001-Linux 基础/0008-sed与awk "sed与awk")
 - **Linux 日常维护**
     - [大文件清理](?file=005-运维与Linux/0002-Linux 日常维护/0000-大文件清理 "大文件清理")
     - [网络状况和优化基础](?file=005-运维与Linux/0002-Linux 日常维护/0003-网络状况和优化基础 "网络状况和优化基础")
