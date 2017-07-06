@@ -62,3 +62,33 @@ complete -F _completemarks qq unmark
 ```
 
 将 此段脚本加入 ```.bashrc```下面，然后 ```source```一下就可以使用了。
+
+## expect 交互处理
+Expect是一个用来处理交互的命令。借助Expect，我们可以将交互过程写在一个脚本上，使之自动化完成。
+基本使用：
+```shell
+# 基本命令：
+send：用于向进程发送字符串
+expect：从进程接收字符串
+spawn：启动新的进程
+interact：允许用户交互
+
+# 示例一:
+#!/usr/bin/expect
+spawn ssh root@192.168.22.194
+expect "*password:"
+send "123\r"
+expect "*#"
+interact
+
+# 示例二：
+set timeout -1
+spawn sudo ssh -p 22 -i /tmp/dev.pem jinlong@1.1.1.1
+expect "*username*"
+send "password\r"
+expect "*key*"
+send "primary_key\r"
+interact
+```
+
+
