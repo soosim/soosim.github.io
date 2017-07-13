@@ -65,7 +65,15 @@ complete -F _completemarks qq unmark
 
 ## expect 交互处理
 Expect是一个用来处理交互的命令。借助Expect，我们可以将交互过程写在一个脚本上，使之自动化完成。
+
+博客:
+
+[http://www.jianshu.com/p/5bf59848d5a9](http://www.jianshu.com/p/5bf59848d5a9)
+
+
+
 基本使用：
+
 ```shell
 # 基本命令：
 send：用于向进程发送字符串
@@ -91,4 +99,17 @@ send "primary_key\r"
 interact
 ```
 
+嵌入bash:
 
+```shell
+#!/usr/bin/bash
+...
+expect<<- END 
+scp -r -P 2214:lex@192.168.120.204:/data/user/user.profile  ./ 
+expect "*password"
+send "password"
+expect eof 
+END
+```
+
+将expect脚本嵌入expect<<- END 和END之间即可

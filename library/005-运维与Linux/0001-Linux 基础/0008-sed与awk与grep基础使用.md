@@ -142,6 +142,9 @@ cat .bashrc | awk '/^$/ {print NR}'
 
 # 统计空白行数量
 cat .bashrc | awk 'BEGIN {x=0} /^$/ {x+=1} END {print x}' 
+
+# 取本机IP地址
+ifconfig | sed -n 2 's/^[ \t]*//'p | cut -d " " -f 2
 ```
 
 
