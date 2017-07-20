@@ -105,7 +105,7 @@ interact
 #!/usr/bin/bash
 ...
 expect<<- END 
-scp -r -P 2214:lex@192.168.120.204:/data/user/user.profile  ./ 
+spawn scp -r -P 2214:lex@192.168.120.204:/data/user/user.profile  ./ 
 expect "*password"
 send "password"
 expect eof 
