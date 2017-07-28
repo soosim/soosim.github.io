@@ -33,13 +33,17 @@
     - [firewall基础](?file=005-运维与Linux/0001-Linux 基础/0006-firewall基础 "firewall基础")
     - [重定向](?file=005-运维与Linux/0001-Linux 基础/0007-重定向 "重定向")
     - [sed与awk与grep基础使用](?file=005-运维与Linux/0001-Linux 基础/0008-sed与awk与grep基础使用 "sed与awk与grep基础使用")
+    - [source及点命令](?file=005-运维与Linux/0001-Linux 基础/0009-source及点命令 "source及点命令")
 - **Linux 日常维护**
     - [大文件清理](?file=005-运维与Linux/0002-Linux 日常维护/0000-大文件清理 "大文件清理")
     - [网络状况和优化基础](?file=005-运维与Linux/0002-Linux 日常维护/0003-网络状况和优化基础 "网络状况和优化基础")
+- **Shell基础**
+    - [case用法](?file=005-运维与Linux/0003-Shell基础/0003-case用法 "case用法")
 - **Ubuntu专栏**
     - [ubuntu常用快捷键](?file=005-运维与Linux/0004-Ubuntu专栏/0000-ubuntu常用快捷键 "ubuntu常用快捷键")
 - **其他**
     - [Samba服务搭建](?file=005-运维与Linux/0017-其他/0005-Samba服务搭建 "Samba服务搭建")
+- [Linux 常用实用命令](?file=005-运维与Linux/9998-Linux 常用实用命令 "Linux 常用实用命令")
 - [LInux 实用工具](?file=005-运维与Linux/9999-LInux 实用工具 "LInux 实用工具")
 
 ##### 开发工具篇
