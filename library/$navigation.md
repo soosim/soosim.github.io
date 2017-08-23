@@ -16,9 +16,12 @@
     - [PHP标准库SPL](?file=002-PHP/0001-PHP基础知识/0007-PHP标准库SPL "PHP标准库SPL")
     - [PHP生成器yield](?file=002-PHP/0001-PHP基础知识/0008-PHP生成器yield "PHP生成器yield")
     - [PHP内置Server服务器](?file=002-PHP/0001-PHP基础知识/0009-PHP内置Server服务器 "PHP内置Server服务器")
+    - [array_walk与array_map的区别](?file=002-PHP/0001-PHP基础知识/0010-array_walk与array_map的区别 "array_walk与array_map的区别")
     - [PHP引用的理解](?file=002-PHP/0001-PHP基础知识/0011-PHP引用的理解 "PHP引用的理解")
 - **PHP底层原理**
     - [PHP原理之opcode](?file=002-PHP/0002-PHP底层原理/0000-PHP原理之opcode "PHP原理之opcode")
+- **PHP开发工具**
+    - [PHP代码检测工具](?file=002-PHP/0003-PHP开发工具/0001-PHP代码检测工具 "PHP代码检测工具")
 
 ##### DB
 - [事务隔离级别](?file=004-DB/0000-事务隔离级别 "事务隔离级别")
@@ -42,6 +45,7 @@
 - **Ubuntu专栏**
     - [ubuntu常用快捷键](?file=005-运维与Linux/0004-Ubuntu专栏/0000-ubuntu常用快捷键 "ubuntu常用快捷键")
 - **其他**
+    - [编译安装PHP扩展](?file=005-运维与Linux/0017-其他/0001-编译安装PHP扩展 "编译安装PHP扩展")
     - [Samba服务搭建](?file=005-运维与Linux/0017-其他/0005-Samba服务搭建 "Samba服务搭建")
 - [Linux 常用实用命令](?file=005-运维与Linux/9998-Linux 常用实用命令 "Linux 常用实用命令")
 - [LInux 实用工具](?file=005-运维与Linux/9999-LInux 实用工具 "LInux 实用工具")
@@ -67,6 +71,10 @@
     - [supervisor](?file=007-系统工具篇/0003-supervisor/0003-supervisor "supervisor")
 - **rabbitMQ**
     - [RabbitMq](?file=007-系统工具篇/0004-rabbitMQ/0000-RabbitMq "RabbitMq")
+- **docker**
+    - [基本命令](?file=007-系统工具篇/0005-docker/0001-基本命令 "基本命令")
+    - [端口映射](?file=007-系统工具篇/0005-docker/0005-端口映射 "端口映射")
+    - [目录挂载](?file=007-系统工具篇/0005-docker/0006-目录挂载 "目录挂载")
 
 ##### 其他
 - **DOS小知识**
