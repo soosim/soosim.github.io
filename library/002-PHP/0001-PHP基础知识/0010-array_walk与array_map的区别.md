@@ -82,3 +82,46 @@ Array
 */
 ```
 
+#### array_walk_recursive 对数组中的每个成员递归地应用用户函数
+```php
+bool array_walk_recursive ( array &$array , callable $callback [, mixed $userdata = NULL ] )
+```
+##### 示例
+
+```php
+$af = [
+		[
+			['asdsafasgasf',441,'2423fsafsa','sfasf32432'],
+			['sadsafasgggggg',63630,'asdafasg','asdafasfgas']
+		]
+	];
+function intv(&$a) {
+    $a = intval($a);
+}
+
+array_walk_recursive($af, 'intv');
+print_r($af);exit;
+
+# 结果
+Array
+(
+    [0] => Array
+        (
+            [0] => Array
+                (
+                    [0] => 0
+                    [1] => 441
+                    [2] => 2423
+                    [3] => 0
+                )
+            [1] => Array
+                (
+                    [0] => 0
+                    [1] => 63630
+                    [2] => 0
+                    [3] => 0
+                )
+        )
+)
+```
+
