@@ -25,7 +25,11 @@
 
 #### 推荐文章:
 [简书-Linux运维-搭建高可用Redis缓存](http://www.jianshu.com/p/d7bc873b8797)
+
 [简书-搭建一个redis高可用系统](https://www.jianshu.com/p/c2ab606b00b7)
+
 [知乎-Redis集群方案应该怎么做](https://www.zhihu.com/question/21419897)
+
 [Redis中文网-Redis哨兵](http://redis.majunwei.com/topics/sentinel.html)
+
 [Redis中文网-集群介绍](http://www.redis.cn/topics/cluster-tutorial.html)
