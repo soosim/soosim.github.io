@@ -26,6 +26,11 @@
 - **PHP开发工具**
     - [PHP代码检测工具](?file=002-PHP/0003-PHP开发工具/0001-PHP代码检测工具 "PHP代码检测工具")
 
+##### JAVA
+- **基础知识**
+    - [工具类 ToStringBuilder](?file=003-JAVA/001-基础知识/0001-工具类 ToStringBuilder "工具类 ToStringBuilder")
+    - [知识点](?file=003-JAVA/001-基础知识/9999-知识点 "知识点")
+
 ##### DB
 - [事务隔离级别](?file=004-DB/0000-事务隔离级别 "事务隔离级别")
 
@@ -47,6 +52,8 @@
     - [case用法](?file=005-运维与Linux/0003-Shell基础/0003-case用法 "case用法")
 - **Ubuntu专栏**
     - [ubuntu常用快捷键](?file=005-运维与Linux/0004-Ubuntu专栏/0000-ubuntu常用快捷键 "ubuntu常用快捷键")
+- **Redis相关**
+    - [高可用redis集群方案](?file=005-运维与Linux/0005-Redis相关/0001-高可用redis集群方案 "高可用redis集群方案")
 - **其他**
     - [编译安装PHP扩展](?file=005-运维与Linux/0017-其他/0001-编译安装PHP扩展 "编译安装PHP扩展")
     - [Samba服务搭建](?file=005-运维与Linux/0017-其他/0005-Samba服务搭建 "Samba服务搭建")
