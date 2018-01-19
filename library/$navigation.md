@@ -29,7 +29,7 @@
 ##### JAVA
 - **基础知识**
     - [工具类 ToStringBuilder](?file=003-JAVA/001-基础知识/0001-工具类 ToStringBuilder "工具类 ToStringBuilder")
-    - [知识点](?file=003-JAVA/001-基础知识/9999-知识点 "知识点")
+    - [StringUnits方法isBlank与isEmpty区别](?file=003-JAVA/001-基础知识/0002-StringUnits方法isBlank与isEmpty区别 "StringUnits方法isBlank与isEmpty区别")
 
 ##### DB
 - [事务隔离级别](?file=004-DB/0000-事务隔离级别 "事务隔离级别")
