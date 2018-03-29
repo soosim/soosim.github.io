@@ -26,6 +26,8 @@
     - [PHP变量内存中表示【zval与传值传引用】](?file=002-PHP/0002-PHP底层原理/0001-PHP变量内存中表示【zval与传值传引用】 "PHP变量内存中表示【zval与传值传引用】")
 - **PHP开发工具**
     - [PHP代码检测工具](?file=002-PHP/0003-PHP开发工具/0001-PHP代码检测工具 "PHP代码检测工具")
+    - [XDEBUG的基础使用与性能分析](?file=002-PHP/0003-PHP开发工具/0002-XDEBUG的基础使用与性能分析 "XDEBUG的基础使用与性能分析")
+    - [xhprof的使用](?file=002-PHP/0003-PHP开发工具/0003-xhprof的使用 "xhprof的使用")
 
 ##### JAVA
 - **基础知识**
