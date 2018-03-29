@@ -20,6 +20,7 @@
     - [PHP引用的理解](?file=002-PHP/0001-PHP基础知识/0011-PHP引用的理解 "PHP引用的理解")
     - [PHP调用栈](?file=002-PHP/0001-PHP基础知识/0012-PHP调用栈 "PHP调用栈")
     - [PHP后期静态绑定](?file=002-PHP/0001-PHP基础知识/0013-PHP后期静态绑定 "PHP后期静态绑定")
+    - [session_set_save_handler函数](?file=002-PHP/0001-PHP基础知识/0014-session_set_save_handler函数 "session_set_save_handler函数")
 - **PHP底层原理**
     - [PHP原理之opcode](?file=002-PHP/0002-PHP底层原理/0000-PHP原理之opcode "PHP原理之opcode")
     - [PHP变量内存中表示【zval与传值传引用】](?file=002-PHP/0002-PHP底层原理/0001-PHP变量内存中表示【zval与传值传引用】 "PHP变量内存中表示【zval与传值传引用】")
