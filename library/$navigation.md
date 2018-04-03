@@ -30,6 +30,8 @@
     - [PHP代码检测工具](?file=002-PHP/0003-PHP开发工具/0001-PHP代码检测工具 "PHP代码检测工具")
     - [XDEBUG的基础使用与性能分析](?file=002-PHP/0003-PHP开发工具/0002-XDEBUG的基础使用与性能分析 "XDEBUG的基础使用与性能分析")
     - [xhprof的使用](?file=002-PHP/0003-PHP开发工具/0003-xhprof的使用 "xhprof的使用")
+- **配置相关**
+    - [php-fpm配置及优化](?file=002-PHP/0004-配置相关/0001-php-fpm配置及优化 "php-fpm配置及优化")
 
 ##### JAVA
 - **基础知识**
