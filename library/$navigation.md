@@ -23,6 +23,7 @@
     - [session_set_save_handler函数](?file=002-PHP/0001-PHP基础知识/0014-session_set_save_handler函数 "session_set_save_handler函数")
     - [set_exception_handler](?file=002-PHP/0001-PHP基础知识/0015-set_exception_handler "set_exception_handler")
     - [PHP中的finally](?file=002-PHP/0001-PHP基础知识/0016-PHP中的finally "PHP中的finally")
+    - [魔术方法](?file=002-PHP/0001-PHP基础知识/0017-魔术方法 "魔术方法")
 - **PHP底层原理**
     - [PHP原理之opcode](?file=002-PHP/0002-PHP底层原理/0000-PHP原理之opcode "PHP原理之opcode")
     - [PHP变量内存中表示【zval与传值传引用】](?file=002-PHP/0002-PHP底层原理/0001-PHP变量内存中表示【zval与传值传引用】 "PHP变量内存中表示【zval与传值传引用】")
@@ -96,11 +97,14 @@
     - [端口映射](?file=007-系统工具篇/0005-docker/0005-端口映射 "端口映射")
     - [目录挂载](?file=007-系统工具篇/0005-docker/0006-目录挂载 "目录挂载")
 
-##### 计算机底层
-- [计算机相关概念](?file=008-计算机底层/0001-计算机相关概念 "计算机相关概念")
+##### 软件开发相关理论与概念
+- [相关理论](?file=008-软件开发相关理论与概念/0001-相关理论 "相关理论")
+- [ACID](?file=008-软件开发相关理论与概念/0002-ACID "ACID")
 
 ##### 其他知识
 - [msgpack](?file=009-其他知识/0001-msgpack "msgpack")
+
+##### 设计模式
 
 ##### 其他
 - **DOS小知识**
