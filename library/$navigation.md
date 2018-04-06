@@ -22,11 +22,12 @@
     - [PHP后期静态绑定](?file=002-PHP/0001-PHP基础知识/0013-PHP后期静态绑定 "PHP后期静态绑定")
     - [session_set_save_handler函数](?file=002-PHP/0001-PHP基础知识/0014-session_set_save_handler函数 "session_set_save_handler函数")
     - [set_exception_handler](?file=002-PHP/0001-PHP基础知识/0015-set_exception_handler "set_exception_handler")
-    - [PHP中的finally](?file=002-PHP/0001-PHP基础知识/0016-PHP中的finally "PHP中的finally")
-    - [魔术方法](?file=002-PHP/0001-PHP基础知识/0017-魔术方法 "魔术方法")
-- **PHP底层原理**
-    - [PHP原理之opcode](?file=002-PHP/0002-PHP底层原理/0000-PHP原理之opcode "PHP原理之opcode")
-    - [PHP变量内存中表示【zval与传值传引用】](?file=002-PHP/0002-PHP底层原理/0001-PHP变量内存中表示【zval与传值传引用】 "PHP变量内存中表示【zval与传值传引用】")
+    - [register_shutdown_function](?file=002-PHP/0001-PHP基础知识/0016-register_shutdown_function "register_shutdown_function")
+    - [PHP中的finally](?file=002-PHP/0001-PHP基础知识/0017-PHP中的finally "PHP中的finally")
+    - [魔术方法](?file=002-PHP/0001-PHP基础知识/0018-魔术方法 "魔术方法")
+- **PHP底层**
+    - [PHP原理之opcode](?file=002-PHP/0002-PHP底层/0000-PHP原理之opcode "PHP原理之opcode")
+    - [PHP变量内存中表示【zval与传值传引用】](?file=002-PHP/0002-PHP底层/0001-PHP变量内存中表示【zval与传值传引用】 "PHP变量内存中表示【zval与传值传引用】")
 - **PHP开发工具**
     - [PHP代码检测工具](?file=002-PHP/0003-PHP开发工具/0001-PHP代码检测工具 "PHP代码检测工具")
     - [XDEBUG的基础使用与性能分析](?file=002-PHP/0003-PHP开发工具/0002-XDEBUG的基础使用与性能分析 "XDEBUG的基础使用与性能分析")
@@ -63,8 +64,8 @@
     - [case用法](?file=005-运维与Linux/0003-Shell基础/0003-case用法 "case用法")
 - **Ubuntu专栏**
     - [ubuntu常用快捷键](?file=005-运维与Linux/0004-Ubuntu专栏/0000-ubuntu常用快捷键 "ubuntu常用快捷键")
-- **Redis相关**
-    - [高可用redis集群方案](?file=005-运维与Linux/0005-Redis相关/0001-高可用redis集群方案 "高可用redis集群方案")
+- **Redis搭建**
+    - [高可用redis集群方案](?file=005-运维与Linux/0005-Redis搭建/0001-高可用redis集群方案 "高可用redis集群方案")
 - **其他**
     - [编译安装PHP扩展](?file=005-运维与Linux/0017-其他/0001-编译安装PHP扩展 "编译安装PHP扩展")
     - [Samba服务搭建](?file=005-运维与Linux/0017-其他/0005-Samba服务搭建 "Samba服务搭建")
@@ -91,7 +92,8 @@
 - **supervisor**
     - [supervisor](?file=007-系统工具篇/0003-supervisor/0003-supervisor "supervisor")
 - **rabbitMQ**
-    - [RabbitMq](?file=007-系统工具篇/0004-rabbitMQ/0000-RabbitMq "RabbitMq")
+    - [RabbitMq基础概念](?file=007-系统工具篇/0004-rabbitMQ/0000-RabbitMq基础概念 "RabbitMq基础概念")
+    - [RabbitMQ高可用架构](?file=007-系统工具篇/0004-rabbitMQ/0001-RabbitMQ高可用架构 "RabbitMQ高可用架构")
 - **docker**
     - [基本命令](?file=007-系统工具篇/0005-docker/0001-基本命令 "基本命令")
     - [端口映射](?file=007-系统工具篇/0005-docker/0005-端口映射 "端口映射")
@@ -100,11 +102,20 @@
 ##### 软件开发相关理论与概念
 - [相关理论](?file=008-软件开发相关理论与概念/0001-相关理论 "相关理论")
 - [ACID](?file=008-软件开发相关理论与概念/0002-ACID "ACID")
+- [约定优于配置原则](?file=008-软件开发相关理论与概念/0003-约定优于配置原则 "约定优于配置原则")
+- [集群](?file=008-软件开发相关理论与概念/0004-集群 "集群")
 
 ##### 其他知识
 - [msgpack](?file=009-其他知识/0001-msgpack "msgpack")
 
 ##### 设计模式
+- [单例模式](?file=010-设计模式/0001-单例模式 "单例模式")
+- [工厂模式](?file=010-设计模式/0002-工厂模式 "工厂模式")
+- [注册表模式](?file=010-设计模式/0003-注册表模式 "注册表模式")
+- [观察者模式](?file=010-设计模式/0004-观察者模式 "观察者模式")
+- [依赖注入](?file=010-设计模式/0005-依赖注入 "依赖注入")
+- [适配器模式](?file=010-设计模式/0006-适配器模式 "适配器模式")
+- [MVC模式](?file=010-设计模式/0007-MVC模式 "MVC模式")
 
 ##### 其他
 - **DOS小知识**
