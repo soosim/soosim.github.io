@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: c:///Program%20Files/Git/sitemap.xml
