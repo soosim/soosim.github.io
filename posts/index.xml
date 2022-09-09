@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>📚文章 on Soosim&#39;s Blog</title>
-    <link>c:///Program%20Files/Git/posts/</link>
+    <link>https://soosim.github.io/posts/</link>
     <description>Recent content in 📚文章 on Soosim&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 09 Sep 2022 23:19:57 +0800</lastBuildDate><atom:link href="c:///Program%20Files/Git/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 09 Sep 2022 23:19:57 +0800</lastBuildDate><atom:link href="https://soosim.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My First Post</title>
-      <link>c:///Program%20Files/Git/posts/my-first-post/</link>
+      <link>https://soosim.github.io/posts/my-first-post/</link>
       <pubDate>Fri, 09 Sep 2022 23:19:57 +0800</pubDate>
       
-      <guid>c:///Program%20Files/Git/posts/my-first-post/</guid>
+      <guid>https://soosim.github.io/posts/my-first-post/</guid>
       <description></description>
     </item>
     
