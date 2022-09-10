@@ -1,0 +1,168 @@
+---
+title: "Mysql数据库规范参考"
+date: 2022-09-10T21:28:53+08:00
+lastmod: 2022-09-10T21:28:53+08:00
+author: ["Soosim"]
+keywords: 
+- 数据库
+- 规范
+categories: 
+- 
+tags: 
+- mysql
+- 数据路
+
+description: ""
+weight:
+slug: ""
+draft: false # 是否为草稿
+comments: true
+reward: false # 打赏
+mermaid: true #是否开启mermaid
+showToc: true # 显示目录
+TocOpen: true # 自动展开目录
+hidemeta: false # 是否隐藏文章的元信息，如发布日期、作者等
+disableShare: true # 底部不显示分享栏
+showbreadcrumbs: true #顶部显示路径
+cover:
+    image: "" #图片路径例如：posts/tech/123/123.png
+    caption: "" #图片底部描述
+    alt: ""
+    relative: false
+---
+
+​
+Mysql数据库规范参考
+
+一、基本命名和约束规范
+
+【强制】表字符集选择UTF8 ，如果需要存储emoj表情，需要使用UTF8mb4(MySQL 5.5.3以后支持)
+【强制】存储引擎使用InnoDB
+【推荐】变长字符串尽量使用varchar varbinary
+【强制】不在数据库中存储图片、文件等
+【推荐】单表数据量控制在1亿以下
+【强制】库名、表名、字段名不使用保留字
+【参考】MySQL 官方保留字 MySQL :: MySQL 5.7 Reference Manual :: 9.3 Keywords and Reserved Words 
+【推荐】库名、表名、字段名、索引名使用小写字母，以下划线分割 ，需要见名知意
+【推荐】库表名不要设计过长，尽可能用最少的字符表达出表的用途
+二、字段规范
+
+【强制】表必须有主键（唯一索引）否则数据库变更，主从复制，灾难
+【参考】推荐使用自增长 ID做为主键，避免使用 UUID
+
+
+【推荐】字段类型在满足需求条件下越小越好，使用UNSIGNED存储非负整数 ，实际使用时候存储负数场景不多
+【推荐】使用TIMESTAMP存储时间,精确到秒的时间建议采用 DATETIME
+【说明】关于使用datatime和timestamp，现在在5.6.4之后又有了变化，使用二者存储在存储空间上大差距越来越小 ，并且本身datatime存储范围就比timestamp大很多，timestamp只能存储到2038年
+【推荐】使用varchar存储变长字符串 ，当然要注意varchar(M)里的M指的是字符数不是字节数；使用UNSIGNED INT存储IPv4 地址而不是CHAR(15) ，这种方式只能存储IPv4，存储不了IPv6
+【推荐】使用DECIMAL存储精确浮点数
+【说明】FLOAT 表示单精度浮点，DOUBLE 表示双精度浮点，以上两种都存在精 度损失现象，很可能值在比较时得不到正确的结果，而 DECIMAL 是定点类型不存 在上述问题
+【推荐】少用blob text
+【说明】BLOB 与TEXT 在 MYSQL 中优化不如VARCHAR；BLOB 无法使用索引， TEXT 需要使用全文索引但 MYSQL 无法很好的支持全文索引
+三、索引规范
+
+    关于索引规范，一定要记住索引这个东西是一把双刃剑，在加速读的同时也引入了很多额外的写入和锁，降低写入能力，这也是为什么要控制索引数原因。之前看到过不少人给表里每个字段都建了索引，其实对查询可能起不到什么作用。
+
+【强制】单个索引字段数不超过7，单表索引数量不超过7，
+【强制】 索引设计遵循B+ Tree索引最左前缀匹配原则
+【说明】like 'a%'走索引 ,like '%a%'不走索引,在高并发情况，不走索引，可能导致mysql不可用
+【强制】选择区分度高的列作为索引(可以count(distinct xx)/count(xx) xx代表字段，越接近0，选择性越差，建索引效果越差，可能不走)
+【说明】在诸如姓别，状态等字段上面加索引，走索引性能有时不如直接全表扫描
+【强制】建立的索引能覆盖80%主要的查询，不求全，解决问题的主要矛盾
+【强制】DML(Data Manipulation Language数据操作语言)和order by和group by字段要建立合适的索引
+【说明】索引存放时都是有序的，这是天然的排序方法了；查询条件必须遵循最小化 原则，避免全表扫描，如果可以使用到覆盖索引，查询速度会有数量级提高。
+【强制】避免索引的隐式转换（in list 中的类型保证一致）
+【说明】例如：phone 是 varchar 字段类型 错误语句： select id,name,phone,idcard,address from user where phone=123456135246;   正确语句： select id,name,phone,idcard,address from user where phone=’123456135246’ ;
+【强制】避免冗余索引,建索引之前预先确认
+【参考】
+
+idx_abc(a,b,c)
+idx_a(a) 冗余
+idx_ab(a,b) 冗余
+【强制】组合索引创建，将选择率高的放在最左侧
+【参考】ind_abc(a,b,c) ,最优创建的方法应该是 count(distinct a )> count(distinct b ) >count(distinct c)
+【强制】禁止在where条件列上进行运算
+【参考】 where a + 1 < 6 ,正确的写法应该是 a < 6+1
+【强制】对长度过长的 VARCHAR 字段建立索引时
+【参考】 alter table tablename1 add key (column1(6));
+四、SQL类规范
+
+       1)select
+
+【强制】OLTP:避免使用大表的JOIN，MySQL优化器对join优化策略过于简单
+
+【推荐】避免在数据库中进行数学运算和其他大量计算任务
+
+【推荐】避免在查询中使用子查询 
+
+【强制】OLTP 所有业务，禁止一切跨库关联查询
+
+【强制】sql查询尽量避免使用，select *from
+
+【参考】select col1,col2 from tablen;
+
+【强制】禁止使用%name% , 或者%name,可以使用name%
+【参考】错误语句：select id,username from user where username like "%xxx%" #不走索引 正确语句：select id,username from user where username like "xxx%" #走索引
+
+【强制】WHERE从句中禁止对列进行函数转换和计算
+
+【强制】避免使用order by rand
+【说明】性能很差
+
+【推荐】合理的分页，尤其大分页(限定返回的行数)
+
+【强制】主条件必须是索引字段，禁止全表扫描。
+
+【说明】可以通过explain观察查询是否走索引
+
+        2)dml
+
+【强制】insert 尽量使用指定列插入
+
+【参考】insert into b(id,name) values(1,'test');
+
+【强制】INSERT INTO …SELECT…和 INSERT INTO …SELECT… JOIN 语法。
+
+【强制】UPDATE、DELETE语句不使用LIMIT ，容易造成主从不一致
+
+【强制】update 、delete 必须指定where条件，不指定，邮件说明原因
+
+【推荐】SQL合并，主要是指的DML时候多个value合并，减少和数据库交互
+
+【推荐】 replace into尽量不使用
+
+        3)ddl
+
+【推荐】大表DDL应该提前告知DBA
+
+【强制】SQL合并，对一张表的变更放在一条语句中
+【参考】如下变更
+        alter table b add col1 varchar(10) default '' not null comment 'xxx' ;
+        alter table b add col2 varchar(10) default '' not null comment 'xxx' ;
+         应该合并成：alter table b add col1 varchar(10) default '' not null comment 'xxx' ,add col2 varchar(10) default '' not null comment 'xxx' ;
+
+【推荐】尽量不使用存储过程、触发器、函数等
+
+五、 运维规范主要内容
+
+【强制】SQL审核，DDL审核和操作时间，尤其是OnlineDDL（大表）业务低峰期变更
+【强制】高危操作检查，Drop前做好数据备份
+【强制】delete/update做好备份相应的数据
+【强制】权限控制和审计(权限最小化  SELECT, INSERT, UPDATE, DELETE, CREATE, DROP, ALTER)
+  a) 所有业务需使用独立账号访问数据库，禁止超出业务必需的权限。
+  b) 应用程序使用的账号，禁止使用 SELECT,INSERT,UPDATE,DELETE 以外的权限
+  c) 各组内因业务变动等原因确认不需要的账号，及时通知 DBA 进行回收权限。
+  d) 各组的数据库账号和密码妥善保管，只限于项目组内人员使用，禁止跨项目组混用
+【强制】日志分析，主要是指的MySQL慢日志和错误日志
+  针对OLTP,慢查询标准【推荐】
+
+【强制】 数据备份安全
+  a)【强制】数据需异地备份
+  b)【推荐】备份需实现逻辑备份与物理备份并行机制
+  c)【推荐】针对数据量巨大的实例或 SCHEMA，可采用全量备份和增量备份结合 的方式。
+  d)【推荐】 建议设置延迟复制的机制，以减少线上重要数据库人为误操作引起 的宕机危险。 (核心业务库)
+  e)【推荐】每月至少进行一次备份有效性的验证，需要有测试机器资源 （恢复演练）
+​
+
+
+
