@@ -6,7 +6,16 @@
     <description>Recent content on Soosim&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 10 Sep 2022 21:21:18 +0800</lastBuildDate><atom:link href="https://soosim.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 10 Sep 2022 21:28:53 +0800</lastBuildDate><atom:link href="https://soosim.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mysql数据库规范参考</title>
+      <link>https://soosim.github.io/posts/tech/mysql%E6%95%B0%E6%8D%AE%E5%BA%93%E8%A7%84%E8%8C%83%E5%8F%82%E8%80%83/</link>
+      <pubDate>Sat, 10 Sep 2022 21:28:53 +0800</pubDate>
+      
+      <guid>https://soosim.github.io/posts/tech/mysql%E6%95%B0%E6%8D%AE%E5%BA%93%E8%A7%84%E8%8C%83%E5%8F%82%E8%80%83/</guid>
+      <description>​ Mysql数据库规范参考 一、基本命名和约束规范 【强制】表字符集选择UTF8 ，如果需要存储emoj表情，需要使用UTF8mb4(MySQL 5</description>
+    </item>
+    
     <item>
       <title>Linux - Fuser命令</title>
       <link>https://soosim.github.io/posts/tech/fuser/</link>
@@ -14,15 +23,6 @@
       
       <guid>https://soosim.github.io/posts/tech/fuser/</guid>
       <description>命令简介 fuser可以显示出当前哪个程序在使用磁盘上的某个文件、挂载点、甚至网络端口，并给出程序进程的详细信息。 fuser显示使用指定文件或</description>
-    </item>
-    
-    <item>
-      <title>My First Post</title>
-      <link>https://soosim.github.io/posts/my-first-post/</link>
-      <pubDate>Fri, 09 Sep 2022 23:19:57 +0800</pubDate>
-      
-      <guid>https://soosim.github.io/posts/my-first-post/</guid>
-      <description></description>
     </item>
     
     <item>
