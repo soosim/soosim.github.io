@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>👨🏻‍💻 技术 on Soosim&#39;s Blog</title>
-    <link>https://soosim.github.io/posts/tech/</link>
-    <description>Recent content in 👨🏻‍💻 技术 on Soosim&#39;s Blog</description>
+    <title>linux on Soosim&#39;s Blog</title>
+    <link>https://soosim.github.io/tags/linux/</link>
+    <description>Recent content in linux on Soosim&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 10 Sep 2022 21:21:18 +0800</lastBuildDate><atom:link href="https://soosim.github.io/posts/tech/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 10 Sep 2022 21:21:18 +0800</lastBuildDate><atom:link href="https://soosim.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Linux - Fuser命令</title>
       <link>https://soosim.github.io/posts/tech/fuser/</link>
@@ -14,15 +14,6 @@
       
       <guid>https://soosim.github.io/posts/tech/fuser/</guid>
       <description>命令简介 fuser可以显示出当前哪个程序在使用磁盘上的某个文件、挂载点、甚至网络端口，并给出程序进程的详细信息。 fuser显示使用指定文件或</description>
-    </item>
-    
-    <item>
-      <title>Tech</title>
-      <link>https://soosim.github.io/posts/tech/tech/</link>
-      <pubDate>Tue, 06 Sep 2022 00:17:58 +0800</pubDate>
-      
-      <guid>https://soosim.github.io/posts/tech/tech/</guid>
-      <description></description>
     </item>
     
   </channel>

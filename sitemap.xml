@@ -2,22 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://soosim.github.io/posts/</loc>
-    <lastmod>2022-09-09T23:19:57+08:00</lastmod>
+    <loc>https://soosim.github.io/posts/tech/</loc>
+    <lastmod>2022-09-10T21:21:18+08:00</lastmod>
   </url><url>
-    <loc>https://soosim.github.io/posts/my-first-post/</loc>
-    <lastmod>2022-09-09T23:19:57+08:00</lastmod>
+    <loc>https://soosim.github.io/posts/</loc>
+    <lastmod>2022-09-10T21:21:18+08:00</lastmod>
+  </url><url>
+    <loc>https://soosim.github.io/tags/linux/</loc>
+    <lastmod>2022-09-10T21:21:18+08:00</lastmod>
+  </url><url>
+    <loc>https://soosim.github.io/posts/tech/fuser/</loc>
+    <lastmod>2022-09-10T21:21:18+08:00</lastmod>
   </url><url>
     <loc>https://soosim.github.io/</loc>
+    <lastmod>2022-09-10T21:21:18+08:00</lastmod>
+  </url><url>
+    <loc>https://soosim.github.io/tags/</loc>
+    <lastmod>2022-09-10T21:21:18+08:00</lastmod>
+  </url><url>
+    <loc>https://soosim.github.io/tags/tech/</loc>
+    <lastmod>2022-09-10T21:21:18+08:00</lastmod>
+  </url><url>
+    <loc>https://soosim.github.io/posts/my-first-post/</loc>
     <lastmod>2022-09-09T23:19:57+08:00</lastmod>
   </url><url>
     <loc>https://soosim.github.io/tags/blog/</loc>
     <lastmod>2022-09-06T00:18:23+08:00</lastmod>
   </url><url>
     <loc>https://soosim.github.io/posts/blog/blog/</loc>
-    <lastmod>2022-09-06T00:18:23+08:00</lastmod>
-  </url><url>
-    <loc>https://soosim.github.io/tags/</loc>
     <lastmod>2022-09-06T00:18:23+08:00</lastmod>
   </url><url>
     <loc>https://soosim.github.io/posts/blog/</loc>
@@ -40,12 +52,6 @@
   </url><url>
     <loc>https://soosim.github.io/posts/read/read/</loc>
     <lastmod>2022-09-06T00:18:06+08:00</lastmod>
-  </url><url>
-    <loc>https://soosim.github.io/posts/tech/</loc>
-    <lastmod>2022-09-06T00:17:58+08:00</lastmod>
-  </url><url>
-    <loc>https://soosim.github.io/tags/tech/</loc>
-    <lastmod>2022-09-06T00:17:58+08:00</lastmod>
   </url><url>
     <loc>https://soosim.github.io/posts/tech/tech/</loc>
     <lastmod>2022-09-06T00:17:58+08:00</lastmod>
